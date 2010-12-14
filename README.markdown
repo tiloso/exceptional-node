@@ -2,7 +2,7 @@
 
 Exceptional helps you track errors in your node.js apps!
 
-This module posts exception data from your node.hs apps to Exceptional <http://getexceptional.com>. When an exception occurs, data about the environment and backtrace of the exception are sent.
+This module posts exception data from your node.js apps to Exceptional <http://getexceptional.com>. When an exception occurs, data about the environment and backtrace of the exception are sent.
 
 To use Exceptional for node.js you must have an account at <http://getexceptional.com>.
 
@@ -28,7 +28,7 @@ There a are multiple ways you can use exceptional with your node.js app.
   });
 </pre>
 
-* You can sent exception data to exceptional from inside your own try/catch blocks
+* You can send exception data to exceptional from inside your own try/catch blocks
 <pre>
   try {
 
