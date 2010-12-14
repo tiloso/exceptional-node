@@ -15,7 +15,7 @@
     "mail" : "support@getexceptional.com"
   },
   "main"         : "./lib/exceptional",
-  "engines"      : { "node" : ">=0.2" },
+  "engines"      : { "node" : ">=0.1.100" },
   "scripts"      : { "test" : "test/exceptional-test.js" },
   "dependencies" : {},
   "licenses" : [
