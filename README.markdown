@@ -11,7 +11,7 @@ To use Exceptional for node.js you must have an account at <http://getexceptiona
 Include the exceptional.js file in your application, and set your Exceptional API-KEY
 
 <pre>
- var Exceptional = require(./'exceptional');
+ var Exceptional = require(./'exceptional').Exceptional;
 
  Exceptional.API_KEY = **YOUR-API-KEY**
  </pre>
