@@ -8,45 +8,55 @@ To use Exceptional for node.js you must have an account at <http://getexceptiona
 
 ## Installation
 
-Include the exceptional.js file in your application, and set your Exceptional API-KEY
+Install from [NPM](http://npmjs.com):
 
-<pre>
- var Exceptional = require(./'exceptional').Exceptional;
+```bash
+npm install exceptional-node
+```
 
- Exceptional.API_KEY = **YOUR-API-KEY**
- </pre>
+```javascript
+var Exceptional = require('exceptional-node').Exceptional;
 
+Exceptional.API_KEY = **YOUR-API-KEY**;
+```
+
+Alternately, include the exceptional.js file in your application, and set your Exceptional API-KEY
+
+```javascript
+var Exceptional = require('./exceptional').Exceptional;
+
+Exceptional.API_KEY = **YOUR-API-KEY**;
+```
 
 ## Usage
+
 There a are multiple ways you can use exceptional with your node.js app.
 
 * The process.uncaughtException event can be used to catch exceptions that bubble all the way up to the event loop.
 
-<pre>
-  process.addListener('uncaughtException', function(err) {
-    Exceptional.handle(err);
-  });
-</pre>
+```javascript
+process.addListener('uncaughtException', function(err) {
+  Exceptional.handle(err);
+});
+```
 
 * You can send exception data to exceptional from inside your own try/catch blocks
-<pre>
-  try {
 
-    // Your Code
-
-  } catch(error) {
-    // Your own error processing
-    Exceptional.handle(error);
-  }
-</pre>
+```javascript
+try {
+  // Your Code
+} catch(error) {
+  // Your own error processing
+  Exceptional.handle(error);
+}
+```
 
 ## Example
 
 Check out the small example in examples/demo.js (replace 'your-api-key-here' with your read API-KEY).
 
-<pre>
-  node example/demo.js
-</pre>
+```bash
+node example/demo.js
+```
 
-
-Copyright © 2008, 2010 Contrast.
+Copyright &copy; 2008, 2010, 2012 getexceptional.com
