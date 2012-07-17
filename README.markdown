@@ -35,7 +35,7 @@ There a are multiple ways you can use exceptional with your node.js app.
 * The process.uncaughtException event can be used to catch exceptions that bubble all the way up to the event loop.
 
 ```javascript
-process.addListener('uncaughtException', function(err) {
+process.on('uncaughtException', function(err) {
   Exceptional.handle(err);
 });
 ```
