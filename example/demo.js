@@ -2,7 +2,7 @@ var Exceptional = require('../lib/exceptional').Exceptional;
 
 Exceptional.API_KEY = 'your-api-key-here';
 
-process.addListener('uncaughtException', function(err) {
+process.on('uncaughtException', function(err) {
     Exceptional.handle(err);
 });
 
