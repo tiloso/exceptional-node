@@ -1,5 +1,5 @@
 { "name"         : "exceptional-node",
-  "version"      : "0.1.1",
+  "version"      : "0.1.2",
   "description"  : "node.js module for getexceptional.com",
   "homepage"     : "http://getexceptional.com",
   "author"       : "Wal McConnell <support@getexceptional.com>",
@@ -8,19 +8,19 @@
   ],
   "repository" : {
     "type" : "git",
-    "url"  : "http://github.com/contrast/exceptional-node.git"
+    "url"  : "http://github.com/exceptional/exceptional-node.git"
   },
   "bugs" : {
-    "web"  : "http://github.com/contrast/exceptional-node/issues",
+    "web"  : "http://github.com/exceptional/exceptional-node/issues",
     "mail" : "support@getexceptional.com"
   },
   "main"         : "./lib/exceptional",
-  "engines"      : { "node" : ">=0.2.0" },
+  "engines"      : { "node" : ">=0.8.0" },
   "scripts"      : { "test" : "test/exceptional-test.js" },
   "dependencies" : {},
   "licenses" : [
     { "type" : "MIT",
-      "url"  : "http://github.com/contrast/exceptional-node"
+      "url"  : "http://github.com/exceptional/exceptional-node"
     }
   ]
 }
